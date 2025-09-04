@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Multimedia</title>
+</head>
+<body>
+    <section>
+        <img src="Assets/tomatoes.jpg" alt="Tomatoes that are ripe" height="500px" width="700px">
+    <!-- Image maps -->
+     <h1>Example image map</h1>
+
+     <p>Click different areas on the image to open links</p>
+     <img src="Assets/lakeside.jpg" alt="Image map lol" usemap="#example-map" width="500px">
+     <map name="example-map">
+        <!-- rectangle clickable areas (x1,y1,x2,y2) -->
+         <area shape="rect" coords="34,44,270,350" href="https://x.com" alt="idk">
+     </map>
+     <h2>second map</h2>
+     <img src="Assets/mount.jpg" alt="Mountain" usemap="#second-map" width="700px">
+     <map name="second-map">
+         <area shape="rect" coords="0,0,540,240" href="https://zinduaschool.com/" alt="">
+     </map>
+    </section>
+    
+<!-- Embedding audio -->
+ <h1>Basic Audio Embedding</h1>
+ <audio controls>
+    <source src="Assets/mixkit-hip-hop-02-738.mp3" type="audio/mp3">
+    Your browser does not support the file format.
+ </audio>
+
+</body>
+</html>
