@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="/submit" method="post">
+        <!-- form elements go here -->
+         <label for="username">Username</label>
+         <input 
+         type="text" 
+         name="username" 
+         id="username"
+         required
+         pattern="[A-Za-z][4,10]"
+         title="Username must be 4-10 letters"
+         >
+    </form>
+</body>
+</html>
