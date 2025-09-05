@@ -1,76 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
-    <h1>Forms</h1>
-    <form action="/submit" method="post">
+  </head>
+  <body>
+    <header>
+      <h1>Media Con</h1>
+      <nav>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Form">Register</a></li>
+            <li><a href="#Assets">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p id="About">
+        Welcome to the webside for media con, interact with fans of your
+        favourite media.
+      </p>
+
+      <form action="/submit" method="post" id="Form">
         <!-- form elements go here -->
         <fieldset>
-            <legend>Personal Details</legend>
-         <label for="name">Name</label>
-         <input 
-         type="text" 
-         name="name" 
-         id="name"
-         required
-         pattern="[A-Za-z][3,20]"
-         title="Please enter your full name"
-         >
-         <br>
+          <legend>Register for media con</legend>
+          <!-- Name input -->
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            name="firtsname"
+            id="firstname"
+            required
+            pattern="[A-Za-z][3,]"
+            title="Please enter your First name"
+          />
+          <br />
+          <label for="surname">Surname</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            required
+            pattern="[A-Za-z][3,]"
+            title="Please enter your Surname"
+          />
+          <br />
+          <!-- Number input -->
           <label for="age">Age</label>
-         <input 
-         type="number" 
-         name="age" 
-         id="age"
-         required
-         pattern="[0-9][1,3]"
-         title="Please enter your age"
-         >
-         <br>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            required
+            pattern="[0-9][1,3]"
+            title="Please enter your age"
+          />
+          <br />
+          <!-- Dropdown input -->
           <label for="Gender">Gender</label>
-         <select id="Gender" name="Gender">
-    <option value="select">select</option>          
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-  <option value="Unspecified">Rather not say</option>
-</select>
-<br>
+          <select id="Gender" name="Gender" required>
+            <option value="select">select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Unspecified">Rather not say</option>
+          </select>
+          <br />
+          <!-- Email input -->
           <label for="email">email</label>
-         <input 
-         type="email" 
-         name="email" 
-         id="email"
-         required
-         title="Please enter a valid email"
-         autocomplete="on"
-         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-         >
-         <br>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            title="Please enter a valid email"
+            autocomplete="on"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <br />
+          <!-- Text input -->
           <label for="Interests">Interests</label>
-          <br>
-        <textarea name="Interests" id="Interests" style="width: 200px;">
+          <br />
+          <textarea name="Interests" id="Interests" style="width: 200px">
             Type your interests here
-        </textarea>
-        <br>
-         <input type="submit" value="Submit">
+        </textarea
+          >
+          <br />
+          <input type="submit" value="Submit" />
         </fieldset>
-    </form>
+      </form>
 
-    <!-- Embedding images and videos -->
-     <section id="image">
-     <img src="Assets/Jojo.png" alt="This is a picture of Kakyoin" width="300px">
-     </section>
-     <video controls width="300px">
-        <source src="Assets/246554_small.mp4" type="video/mp4">
-        Your browser doesn't support embedded video
-     </video>
-     <audio controls>
-        <source src="Assets/mixkit-hip-hop-02-738.mp3" type="audio/mp3">
-        Your browser doesn't support embedded audio
-     </audio>
-</body>
+      <!-- Embedding images and videos -->
+      <section id="Assets">
+        <section id="image">
+          <img
+            src="Assets/Jojo.png"
+            alt="This is a picture of Kakyoin"
+            width="300px"
+          />
+        </section>
+        <section id="video">
+          <video controls width="300px" poster="Assets/lakeside.jpg">
+            <source src="Assets/246554_small.mp4" type="video/mp4" />
+            Your browser doesn't support embedded video
+          </video>
+        </section>
+        <section>
+          <audio controls>
+            <source src="Assets/mixkit-hip-hop-02-738.mp3" type="audio/mp3" />
+            Your browser doesn't support embedded audio
+          </audio>
+        </section>
+      </section>
+    </main>
+       <footer>
+      <nav>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Form">Register</a></li>
+            <li><a href="#Assets">Gallery</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
