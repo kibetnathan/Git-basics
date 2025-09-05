@@ -10,33 +10,24 @@
       <h1>Media Con</h1>
       <nav>
         <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Form">Register</a></li>
-          <li><a href="#Assets">Gallery</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Form">Register</a></li>
+            <li><a href="#Assets">Gallery</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="About">
-        <h2>Welcome</h2>
-        <p>
-          Welcome to the webside for media con, interact with fans of your
-          <br />
-          favourite media. Lorem ipsum dolor sit amet, consectetur adipisicing
-          <br />
-          elit. Enim nemo illum fugiat possimus pariatur doloremque veritatis
-          <br />
-          officiis deserunt odit modi, hic deleniti, dolore delectus inventore
-          <br />
-          illo laborum ipsa! Enim, ipsam.
-        </p>
-      </section>
+      <p id="About">
+        Welcome to the webside for media con, interact with fans of your
+        favourite media.
+      </p>
+
       <form action="/submit" method="post" id="Form">
         <!-- form elements go here -->
         <fieldset>
           <legend>Register for media con</legend>
           <!-- Name input -->
-          <label for="firstname">First Name</label><br />
+          <label for="firstname">First Name</label>
           <input
             type="text"
             name="firtsname"
@@ -46,8 +37,7 @@
             title="Please enter your First name"
           />
           <br />
-          <br /><br />
-          <label for="surname">Surname</label><br />
+          <label for="surname">Surname</label>
           <input
             type="text"
             name="surname"
@@ -57,9 +47,8 @@
             title="Please enter your Surname"
           />
           <br />
-          <br /><br />
           <!-- Number input -->
-          <label for="age">Age</label><br />
+          <label for="age">Age</label>
           <input
             type="number"
             name="age"
@@ -69,9 +58,8 @@
             title="Please enter your age"
           />
           <br />
-          <br /><br />
           <!-- Dropdown input -->
-          <label for="Gender">Gender</label><br />
+          <label for="Gender">Gender</label>
           <select id="Gender" name="Gender" required>
             <option value="select">select</option>
             <option value="Male">Male</option>
@@ -79,9 +67,8 @@
             <option value="Unspecified">Rather not say</option>
           </select>
           <br />
-          <br /><br />
           <!-- Email input -->
-          <label for="email">email</label><br />
+          <label for="email">email</label>
           <input
             type="email"
             name="email"
@@ -92,7 +79,6 @@
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
           />
           <br />
-          <br /><br />
           <!-- Text input -->
           <label for="Interests">Interests</label>
           <br />
@@ -101,26 +87,6 @@
         </textarea
           >
           <br />
-          <br /><br />
-          <!-- Date picker -->
-          <label for="DoB">Date of Birth:</label> <br />
-          <input type="date" name="DoB" id="DoB" />
-          <br /><br /><br />
-          <!-- range slider -->
-          <label for="volume">Volume</label><br />
-          <input
-            type="range"
-            name="volume"
-            id="volume"
-            min="0"
-            max="100"
-            step="1"
-            value="50"
-          />
-          <br /><br /><br />
-          <!-- Color picker -->
-          <label for="color">Choose a color</label>
-          <input type="color" name="color" id="color" />
           <input type="submit" value="Submit" />
         </fieldset>
       </form>
@@ -148,13 +114,11 @@
         </section>
       </section>
     </main>
-    <footer>
+       <footer>
       <nav>
         <ul>
-
             
             <li><a href="#Home">Home</a></li>
-
             <li><a href="#About">About</a></li>
             <li><a href="#Form">Register</a></li>
             <li><a href="#Assets">Gallery</a></li>
